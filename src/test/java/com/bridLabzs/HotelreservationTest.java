@@ -27,7 +27,7 @@ public class HotelreservationTest {
         hotelReservationService1.addHotel(Lakewood);
         hotelReservationService1.addHotel(Bridgewood);
         hotelReservationService1.addHotel(RidgeWood);
-        int Days = hotelReservationService1.NoOfDays("2021-05-21","2021-05-26");
+        int Days = hotelReservationService1.NoOfDays("2020-09-10","2020-09-11");
         Hotel result = hotelReservationService1.findCheapestHotel(Days);
         System.out.println(result);
         Assertions.assertEquals(Lakewood,result);

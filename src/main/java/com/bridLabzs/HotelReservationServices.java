@@ -37,7 +37,6 @@ public class HotelReservationServices {
         int noOfDays=(int) ChronoUnit.DAYS.between(startDate,endDate);
         return  noOfDays;
     }
-
     /**
      * This method will take no of days as parameter and check the cheapestRate by using min operation.
      * NoOfDays
