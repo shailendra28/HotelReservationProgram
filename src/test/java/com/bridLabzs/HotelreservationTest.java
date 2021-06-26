@@ -6,7 +6,7 @@ import org.junit.jupiter.api.Test;
 import java.util.List;
 
 /**
- * This test case will check that hotel is added or not.
+ * This Test case will check that hotel is added or not.
  */
 public class HotelreservationTest {
     @Test
