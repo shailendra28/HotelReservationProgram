@@ -13,10 +13,40 @@ public class Hotel {
         this.dailyRate = dailyRate;
     }
     /**
+     * This is a overridden method which will print hotelname and rate.
+     * return
+     */
+    public String toString() {
+        return "Hotel: " + hotelName + "  Rate: " + dailyRate;
+    }
+    /**
+     * Here I have used setter and getter method to set name and rate and according to that will get the value.
+     * return
+     */
+    public String getName() {
+        return hotelName;
+    }
+    public void setName(String name) {
+        this.hotelName = hotelName;
+    }
+    /**
+     * This method will take the no.ofdays and then set the rate.
+     * noOfDays
+     */
+    public void setRate(int noOfDays) {
+        this.dailyRate = this.dailyRate*noOfDays;
+    }
+    /**
+     * return total rate.
+     */
+    public int getRate() {
+        return dailyRate;
+    }
+    /**
      * Here I have added welcome message.
      * args
      */
     public static void main(String[] args) {
-        System.out.println("Welcome to the Hotel Reservation Program");
+        System.out.println("Welcome to Hotel Reservation Program");
     }
 }
