@@ -2,18 +2,9 @@ package com.bridLabzs;
 
 public class Hotel {
     public String hotelName;
-    public int dailyRate,weekDayRate,weekEndRate;
+    public int weekDayRate,weekEndRate,totalRate;
     /**
-     * This One is a parameterised constructor which will initiate the value.
-     * hotelName
-     * dailyRate
-     */
-    public Hotel(String hotelName, int dailyRate) {
-        this.hotelName = hotelName;
-        this.dailyRate = dailyRate;
-    }
-    /**
-     * Here I have created one more parameterised constructor for testcase which will initialise weekday rate and weekEnd rate.
+     * Here I have created one more parameterised constructor which will initialise hotelName, weekday rate and weekEnd rate.
      * hotelName
      * weekDayRate
      * weekEndRate
@@ -24,11 +15,11 @@ public class Hotel {
         this.weekEndRate=weekEndRate;
     }
     /**
-     * This is a overridden method which will print hotelname and rate,weekdayrate and weekEnd rate.
+     * This is a overridden method which will print hotelname,weekdayrate and weekEnd rate.
      * return
      */
     public String toString() {
-        return "Hotel: " + hotelName + "Weekday Rate: " + weekDayRate+" & WeekEnd Rate: "+weekEndRate;
+        return "Hotel: " + hotelName + "Weekday Rate: " + weekDayRate+" & WeekEnd Rate: "+weekEndRate+" & Totalrate is: "+totalRate;
     }
     /**
      * Here I have used setter and getter method to set name and rate and according to that will get the value.
@@ -41,17 +32,26 @@ public class Hotel {
         this.hotelName = hotelName;
     }
     /**
-     * This method will take the no.ofdays and then set the rate.
-     * noOfDays
+     * In this setter method I have taken the parameters below and added totalRate which will add both weekdayRate and weekEndRate.
+     * weekDayCount
+     * weekEndsCount
      */
-    public void setRate(int noOfDays) {
-        this.dailyRate = this.dailyRate*noOfDays;
+    public void setRate(int weekDayCount,int weekEndsCount){
+        this.weekDayRate = this.weekDayRate*weekDayCount;
+        this.weekEndRate = this.weekEndRate*weekEndsCount;
+        this.totalRate = this.weekDayRate + this.weekEndRate;
     }
     /**
-     * return total rate.
+     * weekDaysRate+weekEndsRate
      */
     public int getRate() {
-        return dailyRate;
+        return this.weekDayRate + this.weekEndRate;
+    }
+    /**
+     * return totalrate
+     */
+    public int getTotalRate() {
+        return this.totalRate;
     }
     /**
      * Here I have added welcome message.
