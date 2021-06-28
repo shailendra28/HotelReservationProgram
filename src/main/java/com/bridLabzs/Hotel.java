@@ -2,24 +2,26 @@ package com.bridLabzs;
 
 public class Hotel {
     public String hotelName;
-    public int weekDayRate,weekEndRate,totalRate;
+    public int weekDayRate,weekEndRate,totalRate,ratings;
     /**
-     * Here I have created one more parameterised constructor which will initialise hotelName, weekday rate and weekEnd rate.
+     * Here I have created one parameterised constructor which will initialise hotelName,weekday rate,weekEnd rate and ratings.
      * hotelName
      * weekDayRate
      * weekEndRate
+     * ratings
      */
-    public Hotel(String hotelName,int weekDayRate,int weekEndRate){
+    public Hotel(String hotelName,int weekDayRate,int weekEndRate,int ratings){
         this.hotelName=hotelName;
         this.weekDayRate=weekDayRate;
         this.weekEndRate=weekEndRate;
+        this.ratings=ratings;
     }
     /**
      * This is a overridden method which will print hotelname,weekdayrate and weekEnd rate.
      * return
      */
     public String toString() {
-        return "Hotel: " + hotelName + "Weekday Rate: " + weekDayRate+" & WeekEnd Rate: "+weekEndRate+" & Totalrate is: "+totalRate;
+        return "Hotel: " + hotelName + "Weekday Rate: " + weekDayRate+" & WeekEnd Rate: "+weekEndRate+" & Totalrate is: "+totalRate+" & Rating: "+ratings;
     }
     /**
      * Here I have used setter and getter method to set name and rate and according to that will get the value.
@@ -42,7 +44,7 @@ public class Hotel {
         this.totalRate = this.weekDayRate + this.weekEndRate;
     }
     /**
-     * weekDaysRate+weekEndsRate
+     * return weekDaysRate+weekEndsRate
      */
     public int getRate() {
         return this.weekDayRate + this.weekEndRate;
