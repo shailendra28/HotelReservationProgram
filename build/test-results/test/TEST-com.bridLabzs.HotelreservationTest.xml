@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.bridLabzs.HotelreservationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-26T04:50:47" hostname="ADMIN-PC" time="0.097">
+<testsuite name="com.bridLabzs.HotelreservationTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-06-28T18:06:38" hostname="ADMIN-PC" time="0.047">
   <properties/>
-  <testcase name="shouldBeAbleToReturnCheapestHotel()" classname="com.bridLabzs.HotelreservationTest" time="0.097"/>
-  <system-out><![CDATA[Hotel name:LakewoodTotal rate: 110
-Hotel name:LakewoodTotal rate: 110
-Hotel name:BridgewoodTotal rate: 160
-Hotel name:LakewoodTotal rate: 110
-Hotel name:BridgewoodTotal rate: 160
-Hotel name:RidgewoodTotal rate: 220
-Hotel: Lakewood  Rate: 110
-]]></system-out>
+  <testcase name="givenHotel_with3Parameters_shoulBeAbleToAdd_WeekdayAndWeekEndRate()" classname="com.bridLabzs.HotelreservationTest" time="0.047"/>
+  <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
