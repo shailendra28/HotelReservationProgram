@@ -62,7 +62,7 @@ public class HotelReservationServices {
      * firstDate
      * lastDate
      * return
-     * throws InvalidDateError
+     * InvalidDateError
      */
     public int NoOfWeekDays(String firstDate,String lastDate) throws InvalidDateError {
         LocalDate startDate = LocalDate.parse(firstDate);
@@ -79,7 +79,7 @@ public class HotelReservationServices {
     /**
      * This method will take date range as parameter and check the cheapestRate by using min operation.
      * here the return type is an object of class Hotel through which this method can access the values.
-     * return cheapestRate(obj of Hotel).
+     * cheapestRate(obj of Hotel).
      */
     public Hotel findCheapestHotel(String firstDate,String lastDate) throws InvalidDateError {
         int weekDaysCount = NoOfWeekDays(firstDate, lastDate);
