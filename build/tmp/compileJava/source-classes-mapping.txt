@@ -1,6 +1,6 @@
-com/bridLabzs/Hotel.java
- com.bridLabzs.Hotel
 com/bridLabzs/InvalidDateError.java
  com.bridLabzs.InvalidDateError
+com/bridLabzs/Hotel.java
+ com.bridLabzs.Hotel
 com/bridLabzs/HotelReservationServices.java
  com.bridLabzs.HotelReservationServices
